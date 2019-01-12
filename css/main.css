@@ -1,0 +1,971 @@
+/* line 5, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: "GoldenYouthScript";
+  src: url('fonts/GoldenYouthScript-Regular.otf') format('opentype');
+}
+/* line 106, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 100%;
+  line-height: 1.5em;
+}
+
+/* line 2, ../scss/style.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 5, ../scss/style.scss */
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 28px;
+  line-height: 1.25;
+  overflow-x: hidden;
+}
+
+/* line 11, ../scss/style.scss */
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 15, ../scss/style.scss */
+hr {
+  color: #bbc0c4;
+  height: 1px;
+  margin: 1.785em 0.714em 0.714em;
+}
+
+/* line 20, ../scss/style.scss */
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 24, ../scss/style.scss */
+[class^="icon-"] {
+  display: inline-block;
+  background: url("../images/icons.png") 0 0 no-repeat;
+  cursor: pointer;
+  margin: 0 1.3em;
+}
+
+/* line 30, ../scss/style.scss */
+.icon-cart {
+  width: 1.679em;
+  height: 1.393em;
+  background-position: 0 0;
+}
+
+/* line 35, ../scss/style.scss */
+.icon-menu {
+  width: 1.679em;
+  height: 1.429em;
+  background-position: -1.679em 0;
+}
+
+/* line 40, ../scss/style.scss */
+.icon-mix {
+  width: 6.068em;
+  height: 3.666em;
+  background-position: 0 -3.540em;
+}
+
+/* line 45, ../scss/style.scss */
+.icon-change {
+  width: 3.456em;
+  height: 3.456em;
+  background-position: 0 -7.248em;
+}
+
+/* line 50, ../scss/style.scss */
+.icon-cancel {
+  width: 3.540em;
+  height: 3.540em;
+  background-position: 0.042em -10.704em;
+}
+
+/* line 55, ../scss/style.scss */
+.icon-fb {
+  width: 1.897em;
+  height: 1.897em;
+  background-position: 0 -1.849em;
+}
+
+/* line 60, ../scss/style.scss */
+.icon-tw {
+  width: 1.897em;
+  height: 1.897em;
+  background-position: -2.703em -1.849em;
+}
+
+/* line 65, ../scss/style.scss */
+header {
+  position: relative;
+}
+/* line 67, ../scss/style.scss */
+header .top-bar {
+  height: 3.571em;
+  box-shadow: 0 0 1.235em 0.321em rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+/* line 71, ../scss/style.scss */
+header .top-bar a {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  line-height: 1px;
+}
+/* line 77, ../scss/style.scss */
+header .top-bar div {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+/* line 80, ../scss/style.scss */
+header .top-bar .top-cart {
+  right: 0;
+}
+/* line 84, ../scss/style.scss */
+header .bottom-bar {
+  font-family: "Myriad Pro", sans-serif;
+  min-height: 25.714em;
+  text-align: center;
+  position: relative;
+}
+/* line 89, ../scss/style.scss */
+header .bottom-bar div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  max-width: 76%;
+}
+/* line 93, ../scss/style.scss */
+header .bottom-bar h1 {
+  color: #4d008c;
+  text-transform: uppercase;
+  font-size: 2.14286em;
+  line-height: 1.02083em;
+}
+/* line 98, ../scss/style.scss */
+header .bottom-bar p {
+  color: #424242;
+  font-size: 1.42857em;
+  line-height: 1.03125em;
+}
+/* line 102, ../scss/style.scss */
+header .bottom-bar:before, header .bottom-bar:after {
+  content: "";
+  z-index: -1;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background: url("../images/plant_1.jpg") 60%;
+}
+/* line 111, ../scss/style.scss */
+header .bottom-bar:before {
+  left: 0;
+}
+/* line 114, ../scss/style.scss */
+header .bottom-bar:after {
+  -moz-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+  right: 0;
+}
+
+/* line 120, ../scss/style.scss */
+.note {
+  color: #282828;
+  text-align: center;
+  padding-top: 5em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.538em;
+}
+/* line 127, ../scss/style.scss */
+.note p:nth-child(1) {
+  font-size: 2.14286em;
+  line-height: 1.02083em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  padding-bottom: 1em;
+}
+/* line 133, ../scss/style.scss */
+.note span {
+  color: #fd54cf;
+  font-weight: bold;
+}
+/* line 137, ../scss/style.scss */
+.note p:nth-child(2) {
+  font-size: 1.42857em;
+  line-height: 1.03125em;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+/* line 143, ../scss/style.scss */
+.main-menu {
+  font-size: 1.71429em;
+  line-height: 1.04167em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  justify-content: space-around;
+  display: none;
+}
+/* line 149, ../scss/style.scss */
+.main-menu a {
+  color: #4e4e4e;
+  font-weight: 100;
+  padding: 0.667em 0.08em;
+  width: 25%;
+  text-align: center;
+}
+/* line 155, ../scss/style.scss */
+.main-menu a:hover, .main-menu a:active, .main-menu a:focus {
+  color: #fff;
+  background-color: #54326a;
+}
+/* line 162, ../scss/style.scss */
+.main-menu .activ {
+  color: #fff;
+  background-color: #54326a;
+}
+
+/* line 167, ../scss/style.scss */
+.main-item {
+  font-family: "Myriad Pro", sans-serif;
+  text-align: center;
+}
+/* line 172, ../scss/style.scss */
+.main-item article {
+  padding-right: 1.214em;
+  margin-bottom: 2.143em;
+}
+/* line 26, ../scss/variables.scss */
+.main-item article:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 177, ../scss/style.scss */
+.main-item .main-text {
+  clear: both;
+}
+/* line 180, ../scss/style.scss */
+.main-item h2 {
+  font-size: 2.14286em;
+  line-height: 1.02083em;
+  color: #4d008c;
+  margin-bottom: 2.25em;
+  margin-top: 2.25em;
+}
+/* line 186, ../scss/style.scss */
+.main-item h3 {
+  font-size: 2.57143em;
+  line-height: 1.02431em;
+  color: #4d008c;
+  font-family: "GoldenYouthScript", sans-serif;
+  padding-bottom: 0.895em;
+  padding-top: 0.694em;
+}
+/* line 193, ../scss/style.scss */
+.main-item p:last-child {
+  font-weight: 500;
+  padding-top: 0.895em;
+}
+/* line 197, ../scss/style.scss */
+.main-item .main-item-img {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VjZTBmOSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZWVlMiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ece0f9), color-stop(100%, #ffeee2));
+  background-image: -moz-linear-gradient(left, #ece0f9 0%, #ffeee2 100%);
+  background-image: -webkit-linear-gradient(left, #ece0f9 0%, #ffeee2 100%);
+  background-image: linear-gradient(to right, #ece0f9 0%, #ffeee2 100%);
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 23.393em;
+  height: 16.357em;
+}
+/* line 26, ../scss/variables.scss */
+.main-item .main-item-img:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 205, ../scss/style.scss */
+.main-item .main-item-img .wrapper-img {
+  background-color: #fff;
+  box-shadow: 1.071em 0 0.698em 0.052em rgba(0, 0, 0, 0.07);
+  padding: 0.500em;
+  position: relative;
+  bottom: 0.821em;
+  left: 0.821em;
+  flex-grow: 1;
+  width: 23.393em;
+  height: 16.357em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/* line 220, ../scss/style.scss */
+.main-item .main-item-img .respon-img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+}
+
+/* line 228, ../scss/style.scss */
+.wrapper-info {
+  position: relative;
+}
+/* line 230, ../scss/style.scss */
+.wrapper-info:before, .wrapper-info:after {
+  content: "";
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url("../images/pattern.png") no-repeat;
+  background-position: 100% 0;
+}
+/* line 240, ../scss/style.scss */
+.wrapper-info:before {
+  top: -1.43em;
+  right: 0;
+}
+/* line 245, ../scss/style.scss */
+.wrapper-info:after {
+  bottom: -1.43em;
+  -moz-transform: scale(-1, -1);
+  -o-transform: scale(-1, -1);
+  -ms-transform: scale(-1, -1);
+  -webkit-transform: scale(-1, -1);
+  transform: scale(-1, -1);
+}
+
+/* line 250, ../scss/style.scss */
+.wrapper-info-text {
+  color: #fff;
+  margin: 1.43em;
+  padding: 4.289em 0;
+  background-color: #512e91;
+}
+/* line 255, ../scss/style.scss */
+.wrapper-info-text h3,
+.wrapper-info-text .info-plus {
+  text-transform: uppercase;
+}
+/* line 259, ../scss/style.scss */
+.wrapper-info-text h3 {
+  font-size: 2.57143em;
+  line-height: 1.02431em;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 1.111em;
+}
+/* line 265, ../scss/style.scss */
+.wrapper-info-text .info-plus {
+  font-size: 2.14286em;
+  line-height: 1.02083em;
+}
+/* line 267, ../scss/style.scss */
+.wrapper-info-text .info-plus span {
+  color: #fd54cf;
+}
+/* line 271, ../scss/style.scss */
+.wrapper-info-text p {
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 1.71429em;
+  line-height: 1.04167em;
+  text-align: center;
+  padding: 0 1.3334em 0.834em 1.3334em;
+}
+/* line 277, ../scss/style.scss */
+.wrapper-info-text ul {
+  font-size: 1.49679em;
+  line-height: 1.0439em;
+  text-transform: uppercase;
+  padding: 0 0.835em 0 1.91em;
+}
+/* line 281, ../scss/style.scss */
+.wrapper-info-text ul span {
+  font-weight: bold;
+}
+
+/* line 286, ../scss/style.scss */
+.explaine {
+  padding: 2.323em;
+}
+/* line 288, ../scss/style.scss */
+.explaine section {
+  padding-top: 0.89em;
+  padding-bottom: 0.714em;
+}
+/* line 292, ../scss/style.scss */
+.explaine h2 {
+  font-size: 2.57143em;
+  line-height: 1.02431em;
+  color: #4d008c;
+  text-align: center;
+  padding: 0.418em 0.694em 1.25em;
+}
+/* line 298, ../scss/style.scss */
+.explaine h3 {
+  font-weight: 500;
+  font-size: 1.28571em;
+  line-height: 1.04167em;
+  text-transform: uppercase;
+}
+/* line 303, ../scss/style.scss */
+.explaine p {
+  font-weight: 300;
+  font-size: 1.28571em;
+  line-height: 1.04167em;
+}
+
+/* line 26, ../scss/variables.scss */
+.steps section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 311, ../scss/style.scss */
+.steps section img {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+/* line 318, ../scss/style.scss */
+.steps .steps-1 img {
+  max-width: 26.571em;
+  z-index: 1;
+}
+/* line 323, ../scss/style.scss */
+.steps .steps-2,
+.steps .steps-4 {
+  position: relative;
+}
+/* line 326, ../scss/style.scss */
+.steps .steps-2 div,
+.steps .steps-4 div {
+  padding-top: 1.4285em;
+}
+/* line 329, ../scss/style.scss */
+.steps .steps-2:before,
+.steps .steps-4:before {
+  content: "";
+  background: url(../images/pattern_step.jpg) repeat-x;
+  height: 100%;
+  position: absolute;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+/* line 338, ../scss/style.scss */
+.steps .steps-2 {
+  top: -1.2em;
+}
+/* line 340, ../scss/style.scss */
+.steps .steps-2 img {
+  max-width: 17.643em;
+  bottom: 1.2em;
+}
+/* line 344, ../scss/style.scss */
+.steps .steps-2:before {
+  height: 95%;
+}
+/* line 348, ../scss/style.scss */
+.steps .steps-3 {
+  padding-top: 1.429em;
+  position: relative;
+  top: -2.2em;
+  background-color: #fff;
+}
+/* line 353, ../scss/style.scss */
+.steps .steps-3 img {
+  max-width: 18.571em;
+  padding-top: 1.42em;
+  z-index: 1;
+}
+/* line 358, ../scss/style.scss */
+.steps .steps-3 .circle {
+  margin-bottom: 0.66em;
+}
+/* line 362, ../scss/style.scss */
+.steps .steps-4 {
+  top: -4.7em;
+  padding-bottom: 2.857em;
+}
+/* line 365, ../scss/style.scss */
+.steps .steps-4 ul {
+  font-weight: 500;
+  font-size: 0.8475em;
+  line-height: 1.05352em;
+  color: #4d008c;
+  clear: both;
+  padding-top: 1.66em;
+  max-width: 32.617em;
+  margin: auto;
+}
+/* line 373, ../scss/style.scss */
+.steps .steps-4 ul li {
+  width: 32%;
+  display: inline-block;
+  position: relative;
+  min-height: 13.021em;
+  text-align: center;
+}
+/* line 380, ../scss/style.scss */
+.steps .steps-4 ul span {
+  height: 8.428em;
+  width: 8.428em;
+  background-color: #4d008c;
+  margin-top: 1.04em;
+  display: inline-block;
+  -webkit-border-radius: 75px;
+  -moz-border-radius: 75px;
+  -ms-border-radius: 75px;
+  border-radius: 75px;
+  position: relative;
+}
+/* line 388, ../scss/style.scss */
+.steps .steps-4 ul span i {
+  margin-left: 0;
+}
+/* line 393, ../scss/style.scss */
+.steps .steps-4 .more {
+  font-size: 0.95429em;
+  line-height: 1.07597em;
+  color: #2b2b2b;
+  padding-left: 1.984em;
+  padding-right: 5.988em;
+  position: relative;
+}
+/* line 399, ../scss/style.scss */
+.steps .steps-4 .more span {
+  font-weight: 500;
+  text-transform: none;
+  color: inherit;
+}
+/* line 404, ../scss/style.scss */
+.steps .steps-4 .more:after {
+  content: "";
+  width: 4.566em;
+  height: 5.090em;
+  position: absolute;
+  background: url(../images/icons.png);
+  background-position: 0 -12.687em;
+  right: 0.075em;
+  bottom: 0.487em;
+}
+/* line 416, ../scss/style.scss */
+.steps h2 {
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 1.98821em;
+  line-height: 1.03287em;
+  text-align: center;
+  color: #54326a;
+  padding-top: 1.61em;
+  padding-bottom: 0.89em;
+}
+/* line 424, ../scss/style.scss */
+.steps .circle {
+  font-size: 2.81179em;
+  line-height: 1.01613em;
+  color: #fff;
+  background-color: #c5508a;
+  font-family: "GoldenYouthScript", sans-serif;
+  width: 2.540em;
+  height: 2.540em;
+  -webkit-border-radius: 1.27em;
+  -moz-border-radius: 1.27em;
+  -ms-border-radius: 1.27em;
+  border-radius: 1.27em;
+  position: relative;
+  display: inline-block;
+  float: left;
+  margin-right: 0.3461em;
+  margin-left: 0.674em;
+}
+/* line 439, ../scss/style.scss */
+.steps i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+/* line 442, ../scss/style.scss */
+.steps p {
+  font-size: 1.2725em;
+  line-height: 1.05248em;
+  color: #000;
+  font-weight: 300;
+  padding-top: 0.833em;
+  padding-bottom: 0.833em;
+  padding-right: 0.56em;
+  position: relative;
+}
+/* line 450, ../scss/style.scss */
+.steps p span {
+  color: #4d008c;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* line 457, ../scss/style.scss */
+.buy {
+  margin: 0 2.857em;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* line 464, ../scss/style.scss */
+.buy section {
+  padding-top: 0.357em;
+  padding-bottom: 3.214em;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-grow: 1;
+}
+/* line 472, ../scss/style.scss */
+.buy img {
+  padding-bottom: 1.429em;
+}
+/* line 475, ../scss/style.scss */
+.buy span {
+  font-weight: 500;
+  font-size: 1.9375em;
+  line-height: 1.03687em;
+  color: #353535;
+}
+/* line 480, ../scss/style.scss */
+.buy p {
+  font-weight: 300;
+  font-size: 0.97464em;
+  line-height: 1.0535em;
+  color: #4e4e4e;
+  padding-top: 0.550em;
+  padding-bottom: 2.931em;
+}
+/* line 487, ../scss/style.scss */
+.buy a {
+  font-weight: bold;
+  font-size: 1.63464em;
+  line-height: 1.0378em;
+  color: #c5508a;
+  padding: 0.634em;
+  border: 0.131em solid #c5508a;
+  display: block;
+  -webkit-border-radius: 0.218em;
+  -moz-border-radius: 0.218em;
+  -ms-border-radius: 0.218em;
+  border-radius: 0.218em;
+}
+
+/* line 498, ../scss/style.scss */
+footer {
+  color: #fff;
+  background-color: #4d008c;
+  text-align: center;
+  padding: 3.214em 0;
+}
+
+/* line 504, ../scss/style.scss */
+.foo-menu {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.96857em;
+  line-height: 1.0601em;
+  line-height: 2em;
+  margin-bottom: 4.130em;
+  cursor: pointer;
+}
+/* line 511, ../scss/style.scss */
+.foo-menu a {
+  display: block;
+}
+
+/* line 515, ../scss/style.scss */
+.copyright {
+  font-weight: 100;
+  font-size: 0.75321em;
+  line-height: 1.06686em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* line 521, ../scss/style.scss */
+.copyright small {
+  margin-right: 1.233em;
+}
+/* line 524, ../scss/style.scss */
+.copyright li {
+  display: inline-block;
+}
+/* line 526, ../scss/style.scss */
+.copyright li i {
+  margin: 0 0.14em;
+}
+
+@media (min-width: 2002px) {
+  /* line 3, ../scss/responsive.scss */
+  .main-menu {
+    display: flex;
+  }
+
+  /* line 6, ../scss/responsive.scss */
+  .fl {
+    float: left;
+    margin-right: 3.571em !important;
+  }
+
+  /* line 10, ../scss/responsive.scss */
+  .fr {
+    float: right;
+    margin-left: 3.571em !important;
+  }
+  /* line 13, ../scss/responsive.scss */
+  .fr .wrapper-img {
+    right: 0.821em;
+    left: unset !important;
+  }
+
+  /* line 19, ../scss/responsive.scss */
+  .main-item .main-text {
+    clear: none;
+  }
+
+  /* line 23, ../scss/responsive.scss */
+  .buy {
+    flex-direction: row;
+  }
+  /* line 25, ../scss/responsive.scss */
+  .buy section {
+    max-width: 30%;
+  }
+
+  /* line 30, ../scss/responsive.scss */
+  .wrapper-info-text ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  /* line 34, ../scss/responsive.scss */
+  .wrapper-info-text ul li {
+    display: inline-block;
+    padding-right: 1.193em;
+  }
+
+  /* line 41, ../scss/responsive.scss */
+  .steps p {
+    display: inline-block;
+  }
+
+  /* line 45, ../scss/responsive.scss */
+  .steps-1,
+  .steps-3 {
+    display: flex;
+  }
+  /* line 48, ../scss/responsive.scss */
+  .steps-1 div,
+  .steps-3 div {
+    order: 1;
+  }
+  /* line 51, ../scss/responsive.scss */
+  .steps-1 img,
+  .steps-3 img {
+    margin: unset !important;
+  }
+
+  /* line 56, ../scss/responsive.scss */
+  .steps-2 div {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  /* line 61, ../scss/responsive.scss */
+  .steps-3 div {
+    position: relative;
+    top: 50%;
+    -moz-transform: translate(0, 27%);
+    -o-transform: translate(0, 27%);
+    -ms-transform: translate(0, 27%);
+    -webkit-transform: translate(0, 27%);
+    transform: translate(0, 27%);
+  }
+  /* line 66, ../scss/responsive.scss */
+  .steps-3 p {
+    display: block;
+  }
+
+  /* line 71, ../scss/responsive.scss */
+  .steps-4 .div-first {
+    width: 50%;
+    float: left;
+    position: absolute;
+    top: 50%;
+    -moz-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+  /* line 78, ../scss/responsive.scss */
+  .steps-4 .div-second {
+    width: 50%;
+    float: right;
+  }
+  /* line 82, ../scss/responsive.scss */
+  .steps-4 p {
+    display: block;
+  }
+
+  /* line 86, ../scss/responsive.scss */
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  /* line 91, ../scss/responsive.scss */
+  .foo-menu {
+    padding: 0 2.581em;
+    margin-bottom: 0;
+  }
+  /* line 94, ../scss/responsive.scss */
+  .foo-menu a {
+    display: inline;
+    padding: 0 1.438em;
+  }
+}
+@media (min-width: 942px) {
+  /* line 101, ../scss/responsive.scss */
+  main {
+    max-width: 66%;
+    margin: auto;
+  }
+
+  /* line 106, ../scss/responsive.scss */
+  .bottom-bar div {
+    top: 33% !important;
+  }
+
+  /* line 110, ../scss/responsive.scss */
+  .note {
+    padding-left: 1.786em;
+    padding-right: 1.786em;
+  }
+
+  /* line 115, ../scss/responsive.scss */
+  .steps-2 img {
+    float: right;
+    bottom: 0 !important;
+  }
+}
+@media (max-width: 754px) {
+  /* line 123, ../scss/responsive.scss */
+  .mobile-none {
+    display: none;
+  }
+
+  /* line 126, ../scss/responsive.scss */
+  .note {
+    max-width: 23.214em;
+  }
+
+  /* line 130, ../scss/responsive.scss */
+  .main-item .main-item-img {
+    width: 12.5em !important;
+    height: 8.75em !important;
+  }
+  /* line 134, ../scss/responsive.scss */
+  .main-item .wrapper-img {
+    width: 12.5em !important;
+    height: 8.75em !important;
+  }
+}
+@media (max-width: 610px) {
+  /* line 143, ../scss/responsive.scss */
+  .steps-4 ul span {
+    -moz-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    min-height: unset;
+  }
+}

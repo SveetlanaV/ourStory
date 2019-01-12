@@ -1,0 +1,149 @@
+@import "variables";
+@media (min-width: 2002px) {
+	.main-menu {
+		display: flex;
+	}
+	.fl {
+		float: left;
+		margin-right: 3.571em !important;
+	}
+	.fr {
+		float: right;
+		margin-left: 3.571em !important;
+		.wrapper-img {
+			right: 0.821em;
+			left: unset !important;
+		}
+	}
+	.main-item {
+		.main-text {
+			clear: none;
+		}
+	}
+	.buy {
+		flex-direction: row;
+		section {
+		max-width: 30%;
+	}
+	}
+	.wrapper-info-text {
+		ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+			li {
+				display: inline-block;
+				padding-right: 1.193em;
+			}
+		}
+	}
+	.steps {
+		p {
+			display: inline-block;
+		}
+	}
+	.steps-1,
+	.steps-3 {
+		display: flex;
+		div {
+			order: 1;
+		}
+		img {
+			margin: unset !important;
+		}
+	}
+	.steps-2 {
+		div {
+			@include vertical;
+		}
+	}
+	.steps-3 {
+		div {
+			position: relative;
+			top: 50%;
+			@include transform(translate(0, 27%));
+		}
+		p {
+			display: block;
+		}
+	}
+	.steps-4 {
+		.div-first {
+			width: 50%;
+			float: left;
+			position: absolute;
+			top: 50%;
+			@include transform(translate(0, -50%));
+		}
+		.div-second {
+			width: 50%;
+			float: right;
+		}
+		p {
+			display: block;
+		}
+	}
+	footer {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+	.foo-menu {
+		padding: 0 2.581em;
+		margin-bottom: 0;
+		a {
+			display: inline;
+			padding: 0 1.438em;
+		}
+	}
+}
+@media (min-width: 942px) {
+	main {
+	    max-width: 66%;
+		margin: auto;
+	}
+	.bottom-bar {
+		div {
+			top: 33% !important;
+		}
+	}
+	.note {
+		padding-left: 1.786em;
+		padding-right: 1.786em;
+	}
+	.steps-2 {
+		img {
+			float: right;
+			bottom: 0 !important;
+		}
+	}	
+
+}
+@media (max-width: 754px) {
+	.mobile-none {
+		display: none;
+	}
+	.note {
+		max-width: 23.214em;
+	}
+	.main-item {
+		.main-item-img {
+			width: 12.5em !important;
+			height: 8.75em !important;
+		}
+		.wrapper-img {
+			width: 12.5em !important;
+			height: 8.75em !important;
+		}
+	}	
+}
+@media (max-width: 610px) {
+	.steps-4 {
+		ul {
+			span {
+				@include transform(scale(0.5));
+				min-height: unset;
+			}
+		}
+	}	
+}

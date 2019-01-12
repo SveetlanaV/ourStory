@@ -1,0 +1,199 @@
+@font-face {
+  font-family: "GoldenYouthScript";
+  src: url('fonts/GoldenYouthScript-Regular.otf') format('opentype');
+}
+/* line 106, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 100%;
+  line-height: 1.5em;
+}
+
+@media (min-width: 2002px) {
+  /* line 3, ../scss/responsive.scss */
+  .main-menu {
+    display: flex;
+  }
+
+  /* line 6, ../scss/responsive.scss */
+  .fl {
+    float: left;
+    margin-right: 3.571em !important;
+  }
+
+  /* line 10, ../scss/responsive.scss */
+  .fr {
+    float: right;
+    margin-left: 3.571em !important;
+  }
+  /* line 13, ../scss/responsive.scss */
+  .fr .wrapper-img {
+    right: 0.821em;
+    left: unset !important;
+  }
+
+  /* line 19, ../scss/responsive.scss */
+  .main-item .main-text {
+    clear: none;
+  }
+
+  /* line 23, ../scss/responsive.scss */
+  .buy {
+    flex-direction: row;
+  }
+  /* line 25, ../scss/responsive.scss */
+  .buy section {
+    max-width: 30%;
+  }
+
+  /* line 30, ../scss/responsive.scss */
+  .wrapper-info-text ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  /* line 34, ../scss/responsive.scss */
+  .wrapper-info-text ul li {
+    display: inline-block;
+    padding-right: 1.193em;
+  }
+
+  /* line 41, ../scss/responsive.scss */
+  .steps p {
+    display: inline-block;
+  }
+
+  /* line 45, ../scss/responsive.scss */
+  .steps-1,
+  .steps-3 {
+    display: flex;
+  }
+  /* line 48, ../scss/responsive.scss */
+  .steps-1 div,
+  .steps-3 div {
+    order: 1;
+  }
+  /* line 51, ../scss/responsive.scss */
+  .steps-1 img,
+  .steps-3 img {
+    margin: unset !important;
+  }
+
+  /* line 56, ../scss/responsive.scss */
+  .steps-2 div {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  /* line 61, ../scss/responsive.scss */
+  .steps-3 div {
+    position: relative;
+    top: 50%;
+    -moz-transform: translate(0, 27%);
+    -o-transform: translate(0, 27%);
+    -ms-transform: translate(0, 27%);
+    -webkit-transform: translate(0, 27%);
+    transform: translate(0, 27%);
+  }
+  /* line 66, ../scss/responsive.scss */
+  .steps-3 p {
+    display: block;
+  }
+
+  /* line 71, ../scss/responsive.scss */
+  .steps-4 .div-first {
+    width: 50%;
+    float: left;
+    position: absolute;
+    top: 50%;
+    -moz-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+  /* line 78, ../scss/responsive.scss */
+  .steps-4 .div-second {
+    width: 50%;
+    float: right;
+  }
+  /* line 82, ../scss/responsive.scss */
+  .steps-4 p {
+    display: block;
+  }
+
+  /* line 86, ../scss/responsive.scss */
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  /* line 91, ../scss/responsive.scss */
+  .foo-menu {
+    padding: 0 2.581em;
+    margin-bottom: 0;
+  }
+  /* line 94, ../scss/responsive.scss */
+  .foo-menu a {
+    display: inline;
+    padding: 0 1.438em;
+  }
+}
+@media (min-width: 942px) {
+  /* line 101, ../scss/responsive.scss */
+  main {
+    max-width: 66%;
+    margin: auto;
+  }
+
+  /* line 106, ../scss/responsive.scss */
+  .bottom-bar div {
+    top: 33% !important;
+  }
+
+  /* line 110, ../scss/responsive.scss */
+  .note {
+    padding-left: 1.786em;
+    padding-right: 1.786em;
+  }
+
+  /* line 115, ../scss/responsive.scss */
+  .steps-2 img {
+    float: right;
+    bottom: 0 !important;
+  }
+}
+@media (max-width: 754px) {
+  /* line 123, ../scss/responsive.scss */
+  .mobile-none {
+    display: none;
+  }
+
+  /* line 126, ../scss/responsive.scss */
+  .note {
+    max-width: 23.214em;
+  }
+
+  /* line 130, ../scss/responsive.scss */
+  .main-item .main-item-img {
+    width: 12.5em !important;
+    height: 8.75em !important;
+  }
+  /* line 134, ../scss/responsive.scss */
+  .main-item .wrapper-img {
+    width: 12.5em !important;
+    height: 8.75em !important;
+  }
+}
+@media (max-width: 610px) {
+  /* line 143, ../scss/responsive.scss */
+  .steps-4 ul span {
+    -moz-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    min-height: unset;
+  }
+}

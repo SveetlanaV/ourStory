@@ -1,0 +1,61 @@
+@import "compass";
+@import "compass/typography";
+@import "compass/css3/transform";
+@import "compass/css3/font-face";
+@include font-face("GoldenYouthScript", font-files("GoldenYouthScript-Regular.otf"));
+
+@import "compass/typography/links/link-colors";
+@import "compass/typography/vertical_rhythm";
+@include establish-baseline;
+
+$base-font-family: "Rubik", sans-serif;
+$base-font-size: 28px;
+$base-line-height: 1.25;
+$text-color: #424242;
+$text-color-second: #4d008c;
+$text-color-decor: #fd54cf;
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+		-moz-border-radius: $radius;
+			-ms-border-radius: $radius;
+				border-radius: $radius;
+}
+
+@mixin clearfix {
+    &:after {
+		content: "";
+        display: table;
+        clear: both;
+	}
+}
+
+@mixin vertical {
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+@mixin allcenter {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin flexbox() {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+@mixin transform($transforms) {
+	-moz-transform: $transforms;
+		-o-transform: $transforms;
+			-ms-transform: $transforms;
+				-webkit-transform: $transforms;
+					transform: $transforms;
+}
